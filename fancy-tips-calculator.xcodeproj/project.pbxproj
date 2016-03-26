@@ -13,6 +13,8 @@
 		369134041CA0F898001B2A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369134031CA0F898001B2A4C /* Assets.xcassets */; };
 		369134071CA0F898001B2A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369134051CA0F898001B2A4C /* LaunchScreen.storyboard */; };
 		369134121CA0F898001B2A4C /* fancy_tips_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369134111CA0F898001B2A4C /* fancy_tips_calculatorTests.swift */; };
+		36C5EAB41CA3965C001A2047 /* tips_launch_image_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C5EAB31CA3965C001A2047 /* tips_launch_image_v2.png */; };
+		36C5EAB61CA3B364001A2047 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5EAB51CA3B364001A2047 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3691340D1CA0F898001B2A4C /* fancy-tips-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fancy-tips-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		369134111CA0F898001B2A4C /* fancy_tips_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fancy_tips_calculatorTests.swift; sourceTree = "<group>"; };
 		369134131CA0F898001B2A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C5EAB31CA3965C001A2047 /* tips_launch_image_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tips_launch_image_v2.png; path = "../../../../../Google Drive/Old Riffsy Design/tips_launch_image_v2.png"; sourceTree = "<group>"; };
+		36C5EAB51CA3B364001A2047 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,9 @@
 				369133FC1CA0F897001B2A4C /* AppDelegate.swift */,
 				369133FE1CA0F898001B2A4C /* ViewController.swift */,
 				369134001CA0F898001B2A4C /* Main.storyboard */,
+				36C5EAB51CA3B364001A2047 /* UIViewExtensions.swift */,
 				369134031CA0F898001B2A4C /* Assets.xcassets */,
+				36C5EAB31CA3965C001A2047 /* tips_launch_image_v2.png */,
 				369134051CA0F898001B2A4C /* LaunchScreen.storyboard */,
 				369134081CA0F898001B2A4C /* Info.plist */,
 			);
@@ -179,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C5EAB41CA3965C001A2047 /* tips_launch_image_v2.png in Resources */,
 				369134071CA0F898001B2A4C /* LaunchScreen.storyboard in Resources */,
 				369134041CA0F898001B2A4C /* Assets.xcassets in Resources */,
 				369134021CA0F898001B2A4C /* Main.storyboard in Resources */,
@@ -200,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				369133FF1CA0F898001B2A4C /* ViewController.swift in Sources */,
+				36C5EAB61CA3B364001A2047 /* UIViewExtensions.swift in Sources */,
 				369133FD1CA0F897001B2A4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "fancy-tips-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylerblue.fancy-tips-calculator";
@@ -338,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "fancy-tips-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylerblue.fancy-tips-calculator";
@@ -388,6 +398,7 @@
 				369134181CA0F898001B2A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		369134191CA0F898001B2A4C /* Build configuration list for PBXNativeTarget "fancy-tips-calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +407,7 @@
 				3691341B1CA0F898001B2A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
