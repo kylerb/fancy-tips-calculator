@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         roundedValue = 15
         self.greenBottomView.alpha = 0
         self.tipSlider.alpha = 0
-        self.tippercentageLabel.alpha = 0
+        self.tippercentageLabel.alpha = 0        
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +55,7 @@ class ViewController: UIViewController {
         twopersonsLabel.text = String(format: "$%.2f", (total / 2))
         threepersonsLabel.text = String(format: "$%.2f", (total / 3))
         fourpersonsLabel.text = String(format: "$%.2f", (total / 4))
+        
   
         if billFieldNoDollar.characters.count != 0 {
             print ("bill field has characters")
@@ -62,6 +63,12 @@ class ViewController: UIViewController {
             self.tipSlider.fadeIn()
             self.tippercentageLabel.fadeIn()
             }
+        else {
+            billField.text = "$"
+        }
+        
+        fadeInTotal()
+        
     }
     
     @IBAction func sliderValueChanged(sender: UISlider) {
@@ -82,10 +89,23 @@ class ViewController: UIViewController {
         twopersonsLabel.text = String(format: "$%.2f", (total / 2))
         threepersonsLabel.text = String(format: "$%.2f", (total / 3))
         fourpersonsLabel.text = String(format: "$%.2f", (total / 4))
+        
+        fadeInTotal()
     }
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
+    
+    func fadeInTotal() {
+        self.totalLabel.alpha = 0.75
+        UIView.animateWithDuration(0.4, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn,
+                                   animations: {
+                                    self.totalLabel.alpha = 1
+            }, completion: nil )
+        
+    }
 }
+
+
 
